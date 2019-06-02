@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="frames/frames.css">
+    <link rel="stylesheet" href="preview/preview.css">
+    <title>Palette</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container-header">
+        <div class="hamburger-and-logo"><button class="hamburger hamburger--spring" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <a class="logo" href="/"><div>CodeJam - Palette</div></a> </div>
+        <div class="service-buttons">
+          <div id="redo" class="redo"><i class="fas fa-redo-alt"></i></div>
+          <div class="threedots-menu"></div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container container-main">
+        <div class="tools-and-colors">
+          <div class="tools">
+            <ul class="tools-list ui-block">
+              <li id="button-bucket" class="tools-list__item ui-block__item bucket"><i class="fas fa-fill-drip"></i></li>
+              <li id="button-choose" class="tools-list__item ui-block__item choose-color"><i class="fas fa-eye-dropper"></i></li>
+              <li id="button-move" class="tools-list__item ui-block__item move"><i class="fas fa-arrows-alt"></i></li>
+              <li id="button-transform" class="tools-list__item ui-block__item transform"><i class="fas fa-exchange-alt"></i></li>
+            </ul>
+            <ul id="frames" class="frames ui-block">
+              <button id="add-frame" class="add-frame"><i class="fas fa-plus"></i><span>Add new frame</span></button>
+            </ul>
+          </div>
+          <div class="colors">
+            <ul class="color-list ui-block">
+              <li id="color-current-button" class="color-list__item ui-block__item color-current-button"><input class="color-input" type="color" id="color-input" name="color-input"><div id="color_current" class="color color_current"></div></li>
+              <li id="color-prev-button" class="color-list__item ui-block__item color-prev-button"><div id="color_prev" class="color color_prev"></div></li>
+              <li id="color-red-button" class="color-list__item ui-block__item color-red-button"><div id="color_red" class="color color_red"></div></li>
+              <li id="color-blue-button" class="color-list__item ui-block__item color-blue-button test"><div id="color_blue" class="color color_blue"></div></li>
+            </ul>
+          </div>
+        </div>
+        <div id="figures" class="figures">
+          <div id="figure-one" class="figure figure-one">
+          </div>
+          <div id="figure-two" class="figure figure-two">
+          </div>
+          <div id="figure-three" class="figure figure-three">
+          </div>
+          <div id="figure-four" class="figure figure-four">
+          </div>
+          <div id="figure-five" class="figure figure-five">
+          </div>
+          <div id="figure-six" class="figure figure-six">
+          </div>
+          <div id="figure-seven" class="figure figure-seven">
+          </div>
+          <div id="figure-eight" class="figure figure-eight">
+          </div>
+          <div id="figure-nine" class="figure figure-nine">
+          </div>
+        </div>
+        <div id="preview-tool" class="preview-tool">
+          <div class="preview-wrapper">
+            <div id="preview-window" class="preview-window"></div>
+            <div id="preview-controls" class="preview-controls">
+              <label id="frame-rate-label" class="frame-rate-label" for="frame-rate"></label>
+              <input id="frame-rate" class="frame-rate" name="frame-rate" type="range" value="5" min="1" max="24" step="1">
+              <button id="full-screen" class="full-screen"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+    <script src="frames/frames.js"></script>
+    <script src="preview/preview.js"></script>
+  </body>
+</html>
